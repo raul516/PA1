@@ -1,72 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PA1 UC</title>
-    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <link rel="icon" href="favi.ico" />
+    <title>Inicio | Inteligencia Artificial</title>
 </head>
 <body>
 
-    <header id="inicio">
-        <h1 class="titulo-principal">INTELIGENCIA ARTIFICIAL</h1>
-        <p class="intro">Una práctica de HTML5 y CSS3 con todos los elementos requeridos.</p>
-    </header>
+<header>
+    <h1>INTELIGENCIA ARTIFICIAL</h1>
+    <p>Explora el mundo de la IA y su impacto actual.</p>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="#contenido">Contenido</a></li>
-            <li><a href="#imagenes">Imágenes</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="https://www.unesco.org/es/artificial-intelligence" target="_blank">Sitio Externo</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="contenido.html">Contenido</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="inicio.html">Inicio sesion</a></li>
+    </ul>
+</nav>
 
-    <main>
-
-        <section id="contenido">
-            <h2>¿QUE ES IA?</h2>
-            <p>La inteligencia artificial no sólo está facilitando el desarrollo de servicios invaluables 
-                sino que también hace parte de cada vez más aspectos de nuestras vidas. Construida a partir
-                 de data, hardware y conectividad, la IA permite que máquinas simulen aspectos de la 
-                 inteligencia humana tales como la percepción, la solución de problemas, la interacción 
-                 lingüística y hasta la creatividad. Esta tecnología también puede asistir en el cumplimiento 
-                 de la Agenda 2030 para el Desarrollo Sostenible.</p>
-            <p>Los rápidos avances tecnológicos en inteligencia artificial (IA) han generado numerosas 
-                oportunidades a nivel mundial. Sin embargo, estos cambios repentinos también plantean profundas 
-                preocupaciones éticas.</p>
+<main>
+    <section>
+        <h2>Imagen Adaptativa</h2>
+        <picture>
+            <source media="(max-width: 300px)" srcset="imagenes/ia-small.jpg">
+            <source media="(max-width: 700px)" srcset="imagenes/ia-medium.jpg">
+            <img src="imagenes/ia5.jpg
             
-            <h3>TIPOS DE IA</h3>
-            <ol>
-                <li>Primero: SAFTWARE</li>
-                <li>Segundo: INTEGRADAS</li>
-            </ol>
+            " alt="Representación de IA" class="imagen-responsive">
+        </picture>
+    </section>
 
-            <h3>IA EN EL DIA A DIA</h3>
-            <ul>
-                <li>COMPRAS POR INTERNET</li>
-                <li>BUSQUEDAD WEB</li>
-                <li>ASISTENTE DIGITAL</li>
-                <li>CIBERSEGURIDAD</li>
-            </ul>
-        </section>
+    <section>
+        <h2>Imagen Interactiva (Image Map)</h2>
+        <img src="imagenes/ia5.jpg" usemap="#iaMap" class="imagen-interactiva" alt="Mapa de IA" />
+        <map name="iaMap">
+            <area shape="rect" coords="30,30,120,120" href="contenido.html" alt="Contenido" />
+            <area shape="circle" coords="250,150,60" href="contacto.html" alt="Contacto" />
+        </map>
+    </section>
 
-        <section id="imagenes">
-            <h2>IMAGENES</h2>
-            <img src="ia.png" alt="Imagen 1" class="imagen">
-            <img src="https://www.unesco.org/sites/default/files/styles/banner_tablet/public/2022-03/shutterstock_1803136597.jpeg.webp?itok=vFligpp3" alt="Imagen 2" class="imagen"></img>
-        </section>
+    <section>
+        <h2>SVG Integrado</h2>
+        <figure>
+            <img src="imagenes/ia2.jfif" alt="SVG cerebro IA" class="svg-animado" />
+            <figcaption>Representación en SVG del pensamiento computacional.</figcaption>
+        </figure>
+    </section>
+</main>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Envíame un correo a <a href="mailto:ejemplo@correo.com">ejemplo@correo.com</a></p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025</p>
-    </footer>
+<footer>
+    <p>&copy;Inteligencia Artificial</p>
+</footer>
 
 </body>
 </html>

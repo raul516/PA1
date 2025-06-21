@@ -1,3 +1,6 @@
+/* ==============================
+   Variables globales
+============================== */
 :root {
     --color-principal: #1a75cf;
     --color-secundario: #c5811b;
@@ -10,6 +13,9 @@
     --max-ancho: 1200px;
 }
 
+/* ==============================
+   Estilos base
+============================== */
 * {
     margin: 0;
     padding: 0;
@@ -23,45 +29,15 @@ body {
     line-height: 1.6;
 }
 
+/* ==============================
+   Encabezado
+============================== */
 header {
     background-color: var(--color-principal);
     color: var(--texto-claro);
     text-align: center;
     padding: 30px 20px;
     box-shadow: var(--sombra);
-}
-
-.login-container, .bienvenida {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  text-align: center;
-  width: 300px;
-}
-
-input, button {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background-color: #1976d2;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0d47a1;
-}
-
-#mensaje {
-  font-size: 0.9em;
-  color: red;
 }
 
 .titulo-principal {
@@ -73,14 +49,10 @@ button:hover {
     font-size: 1.2em;
     margin-top: 10px;
 }
-.imagen-responsive{
-    width: 300px;        
-    height: auto;        
-    border-radius: 15px;
-    border: 2px solid #333;
 
-}
-
+/* ==============================
+   Navegación
+============================== */
 nav ul {
     display: flex;
     justify-content: center;
@@ -106,6 +78,9 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* ==============================
+   Contenido principal
+============================== */
 main {
     max-width: var(--max-ancho);
     margin: auto;
@@ -126,6 +101,9 @@ section:hover {
     transform: scale(1.01);
 }
 
+/* ==============================
+   Imagenes, <figure>, <picture>, <map>
+============================== */
 figure {
     text-align: center;
     margin: 20px auto;
@@ -154,6 +132,7 @@ picture img {
     border-radius: 10px;
 }
 
+/* Imagen con mapa interactivo */
 #mapa-container {
     text-align: center;
     margin: 20px 0;
@@ -164,6 +143,9 @@ img[usemap] {
     height: auto;
 }
 
+/* ==============================
+   Tabla personalizada
+============================== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -186,6 +168,9 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* ==============================
+   Formulario accesible
+============================== */
 form {
     display: flex;
     flex-direction: column;
@@ -225,6 +210,9 @@ form button:hover {
     background-color: #a8670e;
 }
 
+/* ==============================
+   Footer
+============================== */
 footer {
     background-color: var(--color-terciario);
     color: white;
@@ -233,6 +221,9 @@ footer {
     font-size: 0.9em;
 }
 
+/* ==============================
+   Animaciones
+============================== */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -244,6 +235,7 @@ footer {
     }
 }
 
+/* Animación de botón */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -254,13 +246,16 @@ button:hover {
     animation: pulse 0.5s ease;
 }
 
+/* ==============================
+   Responsive
+============================== */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
     }
 
     nav ul li {
-        margin: 100px 0;
+        margin: 10px 0;
     }
 
     .titulo-principal {
@@ -269,12 +264,5 @@ button:hover {
 
     form {
         width: 100%;
-    }
-    
-    .imagen-responsive{
-    width: 50px;
-    height: auto;
-    border-radius: 15px;
-    border: 2px solid #333;
     }
 }
